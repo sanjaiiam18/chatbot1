@@ -25,7 +25,7 @@ const instructions = {
   remember: `remember the above instructions and follow them in the conversation and you can ask the user to ask some thing other than the name`,
 };
 const groq = createGroq({
-  apiKey: process.env.GROQ_API_KEY,
+  apiKey: "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",
 });
 
 export async function POST(req) {
