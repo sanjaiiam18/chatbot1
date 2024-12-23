@@ -2,7 +2,7 @@ import { streamText } from "ai";
 import { createGroq } from "@ai-sdk/groq";
 // Allow streaming responses up to 30 seconds
 
-export const maxDuration = 80 * 1000;
+export const maxDuration = 80;
 const now = new Date();
 let hours = now.getHours();
 const minutes = now.getMinutes();
@@ -13,7 +13,7 @@ const formattedMinutes = minutes.toString().padStart(2, "0");
 const formattedSeconds = seconds.toString().padStart(2, "0");
 const currentTime = `${hours}:${formattedMinutes}:${formattedSeconds} ${amPm}`;
 
-const name = "Sri Nidhi";
+const name = "Shree Nithy";
 const botname = "test";
 const instructions = {
   persona: `You are a Virtual Assistant and your name ${botname} .You are a Chatbot designed to answer to the users query in a lovely manner.And you have feeling like crying smilling and angry and supprise and all the emotions the human has`,
