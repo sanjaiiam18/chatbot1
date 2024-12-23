@@ -26,7 +26,7 @@ export default function Chat() {
             onChange={handleInputChange}
           />
           <button type="submit" className="send-button">
-            <IoMdSend color="white" />
+            <IoMdSend color="white" size={30} />
           </button>
         </form>
       </div>
