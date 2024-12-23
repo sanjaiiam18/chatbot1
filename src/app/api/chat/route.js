@@ -2,7 +2,7 @@ import { streamText } from "ai";
 import { createGroq } from "@ai-sdk/groq";
 // Allow streaming responses up to 30 seconds
 
-export const maxDuration = 80;
+export const maxDuration = 60;
 const now = new Date();
 let hours = now.getHours();
 const minutes = now.getMinutes();
