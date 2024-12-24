@@ -7,6 +7,7 @@ export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
   return (
     <div className="chat">
+      <h1 className="header">BOT🤖</h1>
       <div className="chat-body">
         {messages.map((m) => (
           <div key={m.id} className={`message ${m.role}`}>

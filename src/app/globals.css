@@ -11,6 +11,16 @@ body {
   width: 100%;
   overflow: hidden;
 }
+.header {
+  font-size: 2.5rem; /* Adjust the size of the text */
+  color: #ffffff; /* Text color */
+  background-color: #007bff; /* Background color (blue) */
+  text-align: center; /* Center the text horizontally */
+  padding: 20px; /* Space inside the header */
+  /* border-radius: 10px; Rounded corners */
+  font-family: Arial, sans-serif; /* Font style */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
 
 /* Main chat container */
 .chat {
@@ -154,6 +164,9 @@ body {
 
 /* Mobile optimization */
 @media screen and (max-width: 768px) {
+  .chat-body {
+    padding-bottom: 4rem; /* Adjust the value as needed */
+  }
   .message {
     max-width: 85%;
     padding: 0.75rem 1rem;
