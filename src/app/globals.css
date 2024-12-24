@@ -18,8 +18,8 @@ body {
   text-align: center; /* Center the text horizontally */
   padding: 20px; /* Space inside the header */
   /* border-radius: 10px; Rounded corners */
-  font-family: Arial, sans-serif; /* Font style */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Main chat container */
