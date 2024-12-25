@@ -12,16 +12,27 @@ body {
   overflow: hidden;
 }
 .header {
-  font-size: 2.5rem; /* Adjust the size of the text */
-  color: #ffffff; /* Text color */
-  background-color: #007bff; /* Background color (blue) */
-  text-align: center; /* Center the text horizontally */
-  padding: 20px; /* Space inside the header */
-  /* border-radius: 10px; Rounded corners */
+  font-size: 2.5rem;
+  color: #ffffff;
+  background-color: #007bff;
+  text-align: center;
+  padding: 20px;
   font-family: Arial, sans-serif;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative; /* Add this to make it a positioning context */
 }
 
+.reload {
+  position: absolute; /* Position absolutely within header */
+  right: 20px; /* Distance from right edge */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Perfect vertical centering */
+  cursor: pointer; /* Add pointer cursor */
+  display: flex;
+  align-items: center;
+}
+
+/* Rest of your CSS remains exactly the same */
 /* Main chat container */
 .chat {
   width: 100vw;
@@ -165,7 +176,7 @@ body {
 /* Mobile optimization */
 @media screen and (max-width: 768px) {
   .chat-body {
-    padding-bottom: 4rem; /* Adjust the value as needed */
+    padding-bottom: 4rem;
   }
   .message {
     max-width: 85%;
@@ -227,7 +238,6 @@ body {
   .chat-input {
     background-color: #0f172a;
     border-color: #334155;
-    /* color: black; */
   }
 
   .chat-input::placeholder {
