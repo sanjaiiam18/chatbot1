@@ -11,7 +11,7 @@ export default function Chat() {
       <h1 className="header">
         BOT🤖
         <span className="reload" onClick={() => window.location.reload()}>
-          <AiOutlineReload />
+          <AiOutlineReload size={24} />
         </span>
       </h1>
 
