@@ -3,9 +3,21 @@ import Markdown from "markdown-to-jsx";
 import { useChat } from "ai/react";
 import { AiOutlineReload } from "react-icons/ai";
 import "./globals.css";
+import { DateTime } from "./api/chat/route";
 import { IoMdSend } from "react-icons/io";
+
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
+  const now = new Date();
+  let hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  const amPm = hours >= 12 ? "PM" : "AM";
+  hours = hours % 12 || 12;
+  const formattedMinutes = minutes.toString().padStart(2, "0");
+  const formattedSeconds = seconds.toString().padStart(2, "0");
+  const currentTime = `${hours}:${formattedMinutes}:${formattedSeconds} ${amPm}`;
+
   return (
     <div className="chat">
       <h1 className="header">

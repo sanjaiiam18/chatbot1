@@ -3,15 +3,21 @@ import { createGroq } from "@ai-sdk/groq";
 // Allow streaming responses up to 30 seconds
 
 export const maxDuration = 60;
-const now = new Date();
-let hours = now.getHours();
-const minutes = now.getMinutes();
-const seconds = now.getSeconds();
-const amPm = hours >= 12 ? "PM" : "AM";
-hours = hours % 12 || 12;
-const formattedMinutes = minutes.toString().padStart(2, "0");
-const formattedSeconds = seconds.toString().padStart(2, "0");
-const currentTime = `${hours}:${formattedMinutes}:${formattedSeconds} ${amPm}`;
+
+const getCurrentTime = () => {
+  const now = new Date();
+  let hours = now.getHours();
+  const minutes = now.getMinutes();
+  const seconds = now.getSeconds();
+  const amPm = hours >= 12 ? "PM" : "AM";
+  console.log("Page loaded at:", now);
+  hours = hours % 12 || 12;
+  const formattedMinutes = minutes.toString().padStart(2, "0");
+  const formattedSeconds = seconds.toString().padStart(2, "0");
+  return `${hours}:${formattedMinutes}:${formattedSeconds} ${amPm}`;
+};
+
+const currentTime = getCurrentTime();
 
 const name = "Shree Nithy";
 const botname = "elsa";
